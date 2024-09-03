@@ -1,0 +1,9 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+df=pd.csv_read()
+hour_data=df["hour"]
+plt.hist(hour_data,bins=24,edgecolor='c',alpha=1)
+plt.xlabel("hour of the day")
+plt.ylabel("frequency")
+plt.grid(True)
+plt.show()
