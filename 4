@@ -1,0 +1,9 @@
+import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
+from matplotlib import pyplot as plt
+df=pd.csv_read()
+carrier_cound=df['carrier'].value_counts()
+plt.pie(carrier_count,autopct='%1,1f%',startangle=80,labels=carrier_count.index())
+plt.title()
+plt.show()
