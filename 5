@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 from matplotlib import pyplot as plt
 sl=pd.csv_read()
 sl.head()
-sns.regplot(x="unit",y="unit price",color="r",scatter_kws={'green':'red'},marker='+')
+sns.regplot(x="unit",y="unit price",data=sl,color="r",scatter_kws={'green':'red'},marker='+')
 plt.title("")
 plt.xlabel("unit")
 plt.ylabel("unit price")
